@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Techmo Media</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- Price Slider Stylesheets -->
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.css">
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap">
+    <!-- swiper-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+    <!-- Magnigic Popup-->
+    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <style media="screen">
+      .category-button{padding: 10px}
+      .category-button:hover{
+        background-color: #f8f9fa;
+        text-align: center;
+        border-radius: 10px;
+        cursor: pointer;
+        color: red;
+      }
+    </style>
+  </head>
+  <body style="padding-top: 72px;">
+    <!-- Navbar -->
+    <header class="header">
+      <!-- Navbar-->
+      <nav class="navbar navbar-expand-lg fixed-top shadow navbar-light bg-white">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center">
+            <a class="navbar-brand py-1" href="index.html"><img src="img/logo.png" style="height:50px"></a>
+          </div>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+          <!-- Navbar Collapse -->
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <form class="form-inline mt-4 mb-2 d-sm-none" action="#" id="searchcollapsed">
+              <div class="input-label-absolute input-label-absolute-left input-reset w-100">
+                <label class="label-absolute" for="searchcollapsed_search"><i class="fa fa-search"></i><span class="sr-only">What are you looking for?</span></label>
+                <input class="form-control form-control-sm border-0 shadow-0 bg-gray-200" id="searchcollapsed_search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-reset btn-sm" type="reset"><i class="fa-times fas">           </i></button>
+              </div>
+            </form>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block"><a class="btn btn-primary" href="404.html">Add a listing</a></li>
+              <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block"><a class="btn btn-secondary" href="404.html">Advertisement</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- /Navbar -->
+    </header>
+    <!-- Navbar Ends-->
+
+    <!-- Hero Section -->
+    <section class="d-flex align-items-center dark-overlay bg-cover" style="background-image: url(./img/photo/photo-1525610553991-2bede1a236e2.jpg);">
+      <div class="container py-6 py-lg-7 text-white overlay-content text-center">
+        <div class="row">
+          <div class="col-xl-10 mx-auto">
+            <h1 class="display-3 font-weight-bold text-shadow">Discover Directory</h1>
+            <p class="text-lg text-shadow">Uncover the best places to eat, drink, and shop nearest to you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Ends -->
+
+    <!-- Categories -->
+    <section class="pt-5 pb-6">
+      <div class="pb-lg-4 text-center">
+        <p class="subtitle text-secondary">One-of-a-kind directory app</p>
+        <h2>Discover great local businesses around you</h2>
+      </div>
+      <div class="container py-3 px-3 px-lg-5 rounded-lg shadow-sm" style="background-color:#fbfbfb">
+        <div class="row">
+          <div class="col-sm-0 col-lg-1"></div>
+
+          <div class="col-sm-6 col-lg-2 mb-3 mb-lg-0 text-center category-button" onclick="location='./category.html'">
+            <div class="icon-rounded mb-3 bg-secondary-light"><i class="fa fa-shopping-bag fa-2x"></i></div>
+            <h3 class="h6 text-uppercase">Shopping</h3>
+          </div>
+
+          <div class="col-sm-6 col-lg-2 mb-3 mb-lg-0 text-center category-button" onclick="location='./category.html'">
+            <div class="icon-rounded mb-3 bg-secondary-light"><i class="fa fa-newspaper fa-2x"></i></div>
+            <h3 class="h6 text-uppercase">Daily needs</h3>
+          </div>
+
+          <div class="col-sm-6 col-lg-2 mb-3 mb-lg-0 text-center category-button" onclick="location='./category.html'">
+            <div class="icon-rounded mb-3 bg-secondary-light"><i class="fa fa-utensils fa-2x"></i></div>
+            <h3 class="h6 text-uppercase">Restaurants</h3>
+          </div>
+
+          <div class="col-sm-6 col-lg-2 mb-3 mb-lg-0 text-center category-button" onclick="location='./category.html'">
+            <div class="icon-rounded mb-3 bg-secondary-light"><i class="fa fa-tools fa-2x"></i></div>
+            <h3 class="h6 text-uppercase">Builders and Contractors</h3>
+          </div>
+
+          <div class="col-sm-6 col-lg-2 mb-3 mb-lg-0 text-center category-button" onclick="location='./category.html'">
+            <div class="icon-rounded mb-3 bg-secondary-light"><i class="fa fa-plug fa-2x"></i></div>
+            <h3 class="h6 text-uppercase">Electrical Goods</h3>
+          </div>
+
+          <div class="col-sm-0 col-lg-1"></div>
+          <div class="col-sm-0 col-lg-1"></div>
+
+          <div class="col-sm-6 col-lg-2 mb-3 mb-lg-0 text-center category-button" onclick="location='./category.html'">
+            <div class="icon-rounded mb-3 bg-secondary-light"><i class="fa fa-truck-loading fa-2x"></i></div>
+            <h3 class="h6 text-uppercase">Packers and Movers</h3>
+          </div>
+
+          <div class="col-sm-6 col-lg-2 mb-3 mb-lg-0 text-center category-button" onclick="location='./category.html'">
+            <div class="icon-rounded mb-3 bg-secondary-light"><i class="fa fa-user-tie fa-2x"></i></div>
+            <h3 class="h6 text-uppercase">Professional Services</h3>
+          </div>
+
+          <div class="col-sm-6 col-lg-2 mb-3 mb-lg-0 text-center category-button" onclick="location='./category.html'">
+            <div class="icon-rounded mb-3 bg-secondary-light"><i class="fa fa-home fa-2x"></i></div>
+            <h3 class="h6 text-uppercase">Real Estate</h3>
+          </div>
+
+          <div class="col-sm-6 col-lg-2 mb-3 mb-lg-0 text-center category-button" onclick="location='./category.html'">
+            <div class="icon-rounded mb-3 bg-secondary-light"><i class="fa fa-building fa-2x"></i></div>
+            <h3 class="h6 text-uppercase">Rent & Hire</h3>
+          </div>
+
+          <div class="col-sm-6 col-lg-2 mb-3 mb-lg-0 text-center category-button" onclick="location='./category.html'">
+            <div class="icon-rounded mb-3 bg-secondary-light"><i class="fa fa-birthday-cake fa-2x"></i></div>
+            <h3 class="h6 text-uppercase">Cake shop</h3>
+          </div>
+
+          <div class="col-sm-0 col-lg-1"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Categories Ends-->
+
+    <!-- Popular Places -->
+    <section class="py-5 bg-gray-100">
+      <div class="container">
+        <div class="text-center pb-lg-4">
+          <p class="subtitle text-secondary">Try something new today</p>
+          <h2 class="mb-5">Popular places around you</h2>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <!-- Slider main container-->
+        <div class="swiper-container swiper-container-mx-negative items-slider-full pt-3">
+          <!-- Additional required wrapper-->
+          <div class="swiper-wrapper pb-5">
+            <!-- Slides-->
+            <div class="swiper-slide h-auto px-2">
+              <!-- venue item-->
+              <div class="w-100 h-100 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
+                <div class="card h-100 border-0 shadow">
+                  <div class="card-img-top overflow-hidden dark-overlay bg-cover" style="background-image: url(img/photo/restaurant-1430931071372-38127bd472b8.jpg); min-height: 200px;"><a class="tile-link" href="detail.html"></a>
+                    <div class="card-img-overlay-bottom z-index-20">
+                      <h4 class="text-white text-shadow">Blue Hill</h4>
+                      <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-gray-300">                    </i>
+                      </p>
+                    </div>
+                    <div class="card-img-overlay-top d-flex justify-content-between align-items-center">
+                      <div class="badge badge-transparent badge-pill px-3 py-2">Restaurants</div><a class="card-fav-icon position-relative z-index-40" href="javascript: void();">
+                        <svg class="svg-icon text-white">
+                          <use xlink:href="#heart-1"> </use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="text-sm text-muted mb-3"> Cupidatat excepteur non dolore laborum et quis nostrud veniam dolore deserunt. Pariatur dolore ut in elit id nulla. Irur...</p>
+                    <p class="text-sm text-muted text-uppercase mb-1">By <a href="#" class="text-dark">Matt Damon</a></p>
+                    <p class="text-sm mb-0"><a class="mr-1" href="#">Restaurant,</a><a class="mr-1" href="#">Contemporary</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <!-- venue item-->
+              <div class="w-100 h-100 hover-animate" data-marker-id="59c0c8e322f3375db4d89128">
+                <div class="card h-100 border-0 shadow">
+                  <div class="card-img-top overflow-hidden dark-overlay bg-cover" style="background-image: url(img/photo/restaurant-1436018626274-89acd1d6ec9d.jpg); min-height: 200px;"><a class="tile-link" href="detail.html"></a>
+                    <div class="card-img-overlay-bottom z-index-20">
+                      <h4 class="text-white text-shadow">Plutorque</h4>
+                      <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i>
+                      </p>
+                    </div>
+                    <div class="card-img-overlay-top d-flex justify-content-between align-items-center">
+                      <div class="badge badge-transparent badge-pill px-3 py-2">Restaurant</div><a class="card-fav-icon position-relative z-index-40" href="javascript: void();">
+                        <svg class="svg-icon text-white">
+                          <use xlink:href="#heart-1"> </use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="text-sm text-muted mb-3"> Proident irure eiusmod velit veniam consectetur id minim irure et nostrud mollit magna velit. Commodo amet proident aliq...</p>
+                    <p class="text-sm text-muted text-uppercase mb-1">By <a href="#" class="text-dark">Matt Damon</a></p>
+                    <p class="text-sm mb-0"><a class="mr-1" href="#">Restaurant,</a><a class="mr-1" href="#">Fusion</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <!-- venue item-->
+              <div class="w-100 h-100 hover-animate" data-marker-id="59c0c8e3a31e62979bf147c9">
+                <div class="card h-100 border-0 shadow">
+                  <div class="card-img-top overflow-hidden dark-overlay bg-cover" style="background-image: url(img/photo/restaurant-1466978913421-dad2ebd01d17.jpg); min-height: 200px;"><a class="tile-link" href="detail.html"></a>
+                    <div class="card-img-overlay-bottom z-index-20">
+                      <h4 class="text-white text-shadow">Junipoor</h4>
+                      <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i>
+                      </p>
+                    </div>
+                    <div class="card-img-overlay-top d-flex justify-content-between align-items-center">
+                      <div class="badge badge-transparent badge-pill px-3 py-2">Music club</div><a class="card-fav-icon position-relative z-index-40" href="javascript: void();">
+                        <svg class="svg-icon text-white">
+                          <use xlink:href="#heart-1"> </use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="text-sm text-muted mb-3"> Lorem amet ex duis in et fugiat consectetur laborum eiusmod labore. Quis cupidatat et do dolor in in magna. Eu sit quis ...</p>
+                    <p class="text-sm text-muted text-uppercase mb-1">By <a href="#" class="text-dark">Matt Damon</a></p>
+                    <p class="text-sm mb-0"><a class="mr-1" href="#">Music,</a><a class="mr-1" href="#">Techno,</a><a class="mr-1" href="#">House</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <!-- venue item-->
+              <div class="w-100 h-100 hover-animate" data-marker-id="59c0c8e3503eb77d487e8082">
+                <div class="card h-100 border-0 shadow">
+                  <div class="card-img-top overflow-hidden dark-overlay bg-cover" style="background-image: url(img/photo/restaurant-1477763858572-cda7deaa9bc5.jpg); min-height: 200px;"><a class="tile-link" href="detail.html"></a>
+                    <div class="card-img-overlay-bottom z-index-20">
+                      <h4 class="text-white text-shadow">Musix</h4>
+                      <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-gray-300">                    </i><i class="fa fa-star text-gray-300">                    </i>
+                      </p>
+                    </div>
+                    <div class="card-img-overlay-top d-flex justify-content-between align-items-center">
+                      <div class="badge badge-transparent badge-pill px-3 py-2">Music club</div><a class="card-fav-icon position-relative z-index-40" href="javascript: void();">
+                        <svg class="svg-icon text-white">
+                          <use xlink:href="#heart-1"> </use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="text-sm text-muted mb-3"> Deserunt eiusmod Lorem proident consequat elit culpa laboris ea cupidatat. Consequat dolore proident ipsum qui sint enim...</p>
+                    <p class="text-sm text-muted text-uppercase mb-1">By <a href="#" class="text-dark">Matt Damon</a></p>
+                    <p class="text-sm mb-0"><a class="mr-1" href="#">Music,</a><a class="mr-1" href="#">Club,</a><a class="mr-1" href="#">Rock</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <!-- venue item-->
+              <div class="w-100 h-100 hover-animate" data-marker-id="59c0c8e39aa2eed0626e485d">
+                <div class="card h-100 border-0 shadow">
+                  <div class="card-img-top overflow-hidden dark-overlay bg-cover" style="background-image: url(img/photo/restaurant-1504087697492-238a6bf49ce8.jpg); min-height: 200px;"><a class="tile-link" href="detail.html"></a>
+                    <div class="card-img-overlay-bottom z-index-20">
+                      <h4 class="text-white text-shadow">Prosure</h4>
+                      <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i>
+                      </p>
+                    </div>
+                    <div class="card-img-overlay-top d-flex justify-content-between align-items-center">
+                      <div class="badge badge-transparent badge-pill px-3 py-2">Restaurant</div><a class="card-fav-icon position-relative z-index-40" href="javascript: void();">
+                        <svg class="svg-icon text-white">
+                          <use xlink:href="#heart-1"> </use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="text-sm text-muted mb-3"> Cillum sunt reprehenderit ea non irure veniam dolore commodo labore fugiat est consequat velit. Cupidatat nisi qui ad si...</p>
+                    <p class="text-sm text-muted text-uppercase mb-1">By <a href="#" class="text-dark">Matt Damon</a></p>
+                    <p class="text-sm mb-0"><a class="mr-1" href="#">Nisi,</a><a class="mr-1" href="#">Ex,</a><a class="mr-1" href="#">Eiusmod</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <!-- venue item-->
+              <div class="w-100 h-100 hover-animate" data-marker-id="59c0c8e39aa2edasd626e485d">
+                <div class="card h-100 border-0 shadow">
+                  <div class="card-img-top overflow-hidden dark-overlay bg-cover" style="background-image: url(img/photo/restaurant-1505275350441-83dcda8eeef5.jpg); min-height: 200px;"><a class="tile-link" href="detail.html"></a>
+                    <div class="card-img-overlay-bottom z-index-20">
+                      <h4 class="text-white text-shadow">Take That</h4>
+                      <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-gray-300">                    </i>
+                      </p>
+                    </div>
+                    <div class="card-img-overlay-top d-flex justify-content-between align-items-center">
+                      <div class="badge badge-transparent badge-pill px-3 py-2">Café</div><a class="card-fav-icon position-relative z-index-40" href="javascript: void();">
+                        <svg class="svg-icon text-white">
+                          <use xlink:href="#heart-1"> </use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="text-sm text-muted mb-3"> Cillum sunt reprehenderit ea non irure veniam dolore commodo labore fugiat est consequat velit. Cupidatat nisi qui ad si...</p>
+                    <p class="text-sm text-muted text-uppercase mb-1">By <a href="#" class="text-dark">Matt Damon</a></p>
+                    <p class="text-sm mb-0"><a class="mr-1" href="#">Nisi,</a><a class="mr-1" href="#">Ex,</a><a class="mr-1" href="#">Eiusmod</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <!-- venue item-->
+              <div class="w-100 h-100 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
+                <div class="card h-100 border-0 shadow">
+                  <div class="card-img-top overflow-hidden dark-overlay bg-cover" style="background-image: url(img/photo/restaurant-1430931071372-38127bd472b8.jpg); min-height: 200px;"><a class="tile-link" href="detail.html"></a>
+                    <div class="card-img-overlay-bottom z-index-20">
+                      <h4 class="text-white text-shadow">Blue Hill</h4>
+                      <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-gray-300">                    </i>
+                      </p>
+                    </div>
+                    <div class="card-img-overlay-top d-flex justify-content-between align-items-center">
+                      <div class="badge badge-transparent badge-pill px-3 py-2">Restaurants</div><a class="card-fav-icon position-relative z-index-40" href="javascript: void();">
+                        <svg class="svg-icon text-white">
+                          <use xlink:href="#heart-1"> </use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="text-sm text-muted mb-3"> Cupidatat excepteur non dolore laborum et quis nostrud veniam dolore deserunt. Pariatur dolore ut in elit id nulla. Irur...</p>
+                    <p class="text-sm text-muted text-uppercase mb-1">By <a href="#" class="text-dark">Matt Damon</a></p>
+                    <p class="text-sm mb-0"><a class="mr-1" href="#">Restaurant,</a><a class="mr-1" href="#">Contemporary</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <!-- venue item-->
+              <div class="w-100 h-100 hover-animate" data-marker-id="59c0c8e322f3375db4d89128">
+                <div class="card h-100 border-0 shadow">
+                  <div class="card-img-top overflow-hidden dark-overlay bg-cover" style="background-image: url(img/photo/restaurant-1436018626274-89acd1d6ec9d.jpg); min-height: 200px;"><a class="tile-link" href="detail.html"></a>
+                    <div class="card-img-overlay-bottom z-index-20">
+                      <h4 class="text-white text-shadow">Plutorque</h4>
+                      <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i>
+                      </p>
+                    </div>
+                    <div class="card-img-overlay-top d-flex justify-content-between align-items-center">
+                      <div class="badge badge-transparent badge-pill px-3 py-2">Restaurant</div><a class="card-fav-icon position-relative z-index-40" href="javascript: void();">
+                        <svg class="svg-icon text-white">
+                          <use xlink:href="#heart-1"> </use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="text-sm text-muted mb-3"> Proident irure eiusmod velit veniam consectetur id minim irure et nostrud mollit magna velit. Commodo amet proident aliq...</p>
+                    <p class="text-sm text-muted text-uppercase mb-1">By <a href="#" class="text-dark">Matt Damon</a></p>
+                    <p class="text-sm mb-0"><a class="mr-1" href="#">Restaurant,</a><a class="mr-1" href="#">Fusion</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <!-- venue item-->
+              <div class="w-100 h-100 hover-animate" data-marker-id="59c0c8e3a31e62979bf147c9">
+                <div class="card h-100 border-0 shadow">
+                  <div class="card-img-top overflow-hidden dark-overlay bg-cover" style="background-image: url(img/photo/restaurant-1466978913421-dad2ebd01d17.jpg); min-height: 200px;"><a class="tile-link" href="detail.html"></a>
+                    <div class="card-img-overlay-bottom z-index-20">
+                      <h4 class="text-white text-shadow">Junipoor</h4>
+                      <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i>
+                      </p>
+                    </div>
+                    <div class="card-img-overlay-top d-flex justify-content-between align-items-center">
+                      <div class="badge badge-transparent badge-pill px-3 py-2">Music club</div><a class="card-fav-icon position-relative z-index-40" href="javascript: void();">
+                        <svg class="svg-icon text-white">
+                          <use xlink:href="#heart-1"> </use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="text-sm text-muted mb-3"> Lorem amet ex duis in et fugiat consectetur laborum eiusmod labore. Quis cupidatat et do dolor in in magna. Eu sit quis ...</p>
+                    <p class="text-sm text-muted text-uppercase mb-1">By <a href="#" class="text-dark">Matt Damon</a></p>
+                    <p class="text-sm mb-0"><a class="mr-1" href="#">Music,</a><a class="mr-1" href="#">Techno,</a><a class="mr-1" href="#">House</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <!-- venue item-->
+              <div class="w-100 h-100 hover-animate" data-marker-id="59c0c8e3503eb77d487e8082">
+                <div class="card h-100 border-0 shadow">
+                  <div class="card-img-top overflow-hidden dark-overlay bg-cover" style="background-image: url(img/photo/restaurant-1477763858572-cda7deaa9bc5.jpg); min-height: 200px;"><a class="tile-link" href="detail.html"></a>
+                    <div class="card-img-overlay-bottom z-index-20">
+                      <h4 class="text-white text-shadow">Musix</h4>
+                      <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-gray-300">                    </i><i class="fa fa-star text-gray-300">                    </i>
+                      </p>
+                    </div>
+                    <div class="card-img-overlay-top d-flex justify-content-between align-items-center">
+                      <div class="badge badge-transparent badge-pill px-3 py-2">Music club</div><a class="card-fav-icon position-relative z-index-40" href="javascript: void();">
+                        <svg class="svg-icon text-white">
+                          <use xlink:href="#heart-1"> </use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="text-sm text-muted mb-3"> Deserunt eiusmod Lorem proident consequat elit culpa laboris ea cupidatat. Consequat dolore proident ipsum qui sint enim...</p>
+                    <p class="text-sm text-muted text-uppercase mb-1">By <a href="#" class="text-dark">Matt Damon</a></p>
+                    <p class="text-sm mb-0"><a class="mr-1" href="#">Music,</a><a class="mr-1" href="#">Club,</a><a class="mr-1" href="#">Rock</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <!-- venue item-->
+              <div class="w-100 h-100 hover-animate" data-marker-id="59c0c8e39aa2eed0626e485d">
+                <div class="card h-100 border-0 shadow">
+                  <div class="card-img-top overflow-hidden dark-overlay bg-cover" style="background-image: url(img/photo/restaurant-1504087697492-238a6bf49ce8.jpg); min-height: 200px;"><a class="tile-link" href="detail.html"></a>
+                    <div class="card-img-overlay-bottom z-index-20">
+                      <h4 class="text-white text-shadow">Prosure</h4>
+                      <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i>
+                      </p>
+                    </div>
+                    <div class="card-img-overlay-top d-flex justify-content-between align-items-center">
+                      <div class="badge badge-transparent badge-pill px-3 py-2">Restaurant</div><a class="card-fav-icon position-relative z-index-40" href="javascript: void();">
+                        <svg class="svg-icon text-white">
+                          <use xlink:href="#heart-1"> </use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="text-sm text-muted mb-3"> Cillum sunt reprehenderit ea non irure veniam dolore commodo labore fugiat est consequat velit. Cupidatat nisi qui ad si...</p>
+                    <p class="text-sm text-muted text-uppercase mb-1">By <a href="#" class="text-dark">Matt Damon</a></p>
+                    <p class="text-sm mb-0"><a class="mr-1" href="#">Nisi,</a><a class="mr-1" href="#">Ex,</a><a class="mr-1" href="#">Eiusmod</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <!-- venue item-->
+              <div class="w-100 h-100 hover-animate" data-marker-id="59c0c8e39aa2edasd626e485d">
+                <div class="card h-100 border-0 shadow">
+                  <div class="card-img-top overflow-hidden dark-overlay bg-cover" style="background-image: url(img/photo/restaurant-1505275350441-83dcda8eeef5.jpg); min-height: 200px;"><a class="tile-link" href="detail.html"></a>
+                    <div class="card-img-overlay-bottom z-index-20">
+                      <h4 class="text-white text-shadow">Take That</h4>
+                      <p class="mb-2 text-xs"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-gray-300">                    </i>
+                      </p>
+                    </div>
+                    <div class="card-img-overlay-top d-flex justify-content-between align-items-center">
+                      <div class="badge badge-transparent badge-pill px-3 py-2">Café</div><a class="card-fav-icon position-relative z-index-40" href="javascript: void();">
+                        <svg class="svg-icon text-white">
+                          <use xlink:href="#heart-1"> </use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="text-sm text-muted mb-3"> Cillum sunt reprehenderit ea non irure veniam dolore commodo labore fugiat est consequat velit. Cupidatat nisi qui ad si...</p>
+                    <p class="text-sm text-muted text-uppercase mb-1">By <a href="#" class="text-dark">Matt Damon</a></p>
+                    <p class="text-sm mb-0"><a class="mr-1" href="#">Nisi,</a><a class="mr-1" href="#">Ex,</a><a class="mr-1" href="#">Eiusmod</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination-->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Popular Places Ends-->
+
+    <!-- What's Trending -->
+    <section class="py-6">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-8">
+            <p class="subtitle text-primary">Placeholder for Advertisement</p>
+            <h2>What's trending</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="d-flex align-items-lg-stretch mb-4 col-lg-8">
+            <div class="card shadow-lg border-0 w-100 border-0 hover-animate" style="background: center center url(img/photo/photo-1449034446853-66c86144b0ad.jpg) no-repeat; background-size: cover;"><a class="tile-link" href="category.html"> </a>
+              <div class="d-flex align-items-center h-100 text-white justify-content-center py-6 py-lg-7">
+                <h3 class="text-shadow text-uppercase mb-0">San Francisco</h3>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-lg-stretch mb-4 col-lg-4">
+            <div class="card shadow-lg border-0 w-100 border-0 hover-animate" style="background: center center url(img/photo/photo-1429554429301-1c7d5ae2d42e.jpg) no-repeat; background-size: cover;"><a class="tile-link" href="category.html"> </a>
+              <div class="d-flex align-items-center h-100 text-white justify-content-center py-6 py-lg-7">
+                <h3 class="text-shadow text-uppercase mb-0">Los Angeles</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="d-flex align-items-lg-stretch mb-4 col-lg-4">
+            <div class="card shadow-lg border-0 w-100 border-0 hover-animate" style="background: center center url(img/photo/photo-1523430410476-0185cb1f6ff9.jpg) no-repeat; background-size: cover;"><a class="tile-link" href="category.html"> </a>
+              <div class="d-flex align-items-center h-100 text-white justify-content-center py-6 py-lg-7">
+                <h3 class="text-shadow text-uppercase mb-0">Santa Monica</h3>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-lg-stretch mb-4 col-lg-4">
+            <div class="card shadow-lg border-0 w-100 border-0 hover-animate" style="background: center center url(img/photo/photo-1505245208761-ba872912fac0.jpg) no-repeat; background-size: cover;"><a class="tile-link" href="category.html"> </a>
+              <div class="d-flex align-items-center h-100 text-white justify-content-center py-6 py-lg-7">
+                <h3 class="text-shadow text-uppercase mb-0">San Diego</h3>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-lg-stretch mb-4 col-lg-4">
+            <div class="card shadow-lg border-0 w-100 border-0 hover-animate" style="background: center center url(img/photo/photo-1519867850-74775a87e783.jpg) no-repeat; background-size: cover;"><a class="tile-link" href="category.html"> </a>
+              <div class="d-flex align-items-center h-100 text-white justify-content-center py-6 py-lg-7">
+                <h3 class="text-shadow text-uppercase mb-0">Fresno</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- What's Trending Ends -->
+
+    <!-- Register with us -->
+    <section>
+      <div class="container bg-gray-100 mb-5 py-5 px-3 px-lg-5 rounded-lg shadow-sm">
+        <div class="row">
+          <div class="col-lg-6 mb-5 mb-lg-0 text-center text-lg-left">
+            <p class="subtitle text-secondary">Start using Directory today</p>
+            <p class="text-lg">Directory is the best way to find &amp; discover great local businesses</p>
+            <p class="text-muted mb-0">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed in</p>
+          </div>
+          <div class="col-lg-6 d-flex align-items-center justify-content-center">
+            <div class="text-center">
+              <p class="mb-2"><a class="btn btn-lg btn-primary" href="#">Add Your Listing</a></p>
+              <p class="text-muted text-small">Just 5 easy Steps! </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Register with us Ends-->
+
+    <!-- Instagram-->
+    <section>
+      <div class="container-fluid px-0">
+        <div class="swiper-container instagram-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide overflow-hidden"><a href="#"><img class="img-fluid hover-scale" src="img/instagram/instagram-1.jpg" alt=" "></a></div>
+            <div class="swiper-slide overflow-hidden"><a href="#"><img class="img-fluid hover-scale" src="img/instagram/instagram-2.jpg" alt=" "></a></div>
+            <div class="swiper-slide overflow-hidden"><a href="#"><img class="img-fluid hover-scale" src="img/instagram/instagram-3.jpg" alt=" "></a></div>
+            <div class="swiper-slide overflow-hidden"><a href="#"><img class="img-fluid hover-scale" src="img/instagram/instagram-4.jpg" alt=" "></a></div>
+            <div class="swiper-slide overflow-hidden"><a href="#"><img class="img-fluid hover-scale" src="img/instagram/instagram-5.jpg" alt=" "></a></div>
+            <div class="swiper-slide overflow-hidden"><a href="#"><img class="img-fluid hover-scale" src="img/instagram/instagram-6.jpg" alt=" "></a></div>
+            <div class="swiper-slide overflow-hidden"><a href="#"><img class="img-fluid hover-scale" src="img/instagram/instagram-7.jpg" alt=" "></a></div>
+            <div class="swiper-slide overflow-hidden"><a href="#"><img class="img-fluid hover-scale" src="img/instagram/instagram-8.jpg" alt=" "></a></div>
+            <div class="swiper-slide overflow-hidden"><a href="#"><img class="img-fluid hover-scale" src="img/instagram/instagram-9.jpg" alt=" "></a></div>
+            <div class="swiper-slide overflow-hidden"><a href="#"><img class="img-fluid hover-scale" src="img/instagram/instagram-10.jpg" alt=" "></a></div>
+            <div class="swiper-slide overflow-hidden"><a href="#"><img class="img-fluid hover-scale" src="img/instagram/instagram-11.jpg" alt=" "></a></div>
+            <div class="swiper-slide overflow-hidden"><a href="#"><img class="img-fluid hover-scale" src="img/instagram/instagram-12.jpg" alt=" "></a></div>
+            <div class="swiper-slide overflow-hidden"><a href="#"><img class="img-fluid hover-scale" src="img/instagram/instagram-13.jpg" alt=" "></a></div>
+            <div class="swiper-slide overflow-hidden"><a href="#"><img class="img-fluid hover-scale" src="img/instagram/instagram-14.jpg" alt=" "></a></div>
+            <div class="swiper-slide overflow-hidden"><a href="#"><img class="img-fluid hover-scale" src="img/instagram/instagram-10.jpg" alt=" "></a></div>
+            <div class="swiper-slide overflow-hidden"><a href="#"><img class="img-fluid hover-scale" src="img/instagram/instagram-11.jpg" alt=" "></a></div>
+            <div class="swiper-slide overflow-hidden"><a href="#"><img class="img-fluid hover-scale" src="img/instagram/instagram-12.jpg" alt=" "></a></div>
+            <div class="swiper-slide overflow-hidden"><a href="#"><img class="img-fluid hover-scale" src="img/instagram/instagram-13.jpg" alt=" "></a></div>
+            <div class="swiper-slide overflow-hidden"><a href="#"><img class="img-fluid hover-scale" src="img/instagram/instagram-14.jpg" alt=" "></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Instagram Ends-->
+
+    <!-- Footer-->
+    <footer class="position-relative z-index-10 d-print-none">
+      <!-- Main block - menus, subscribe form-->
+      <div class="py-6 bg-gray-200 text-muted">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+              <div class="font-weight-bold text-uppercase text-dark mb-3">Techmo-Media</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="twitter"><i class="fab fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="instagram"><i class="fab fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="pinterest"><i class="fab fa-pinterest"></i></a></li>
+                <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="vimeo"><i class="fab fa-vimeo"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+              <h6 class="text-uppercase text-dark mb-3">Rentals</h6>
+              <ul class="list-unstyled">
+                <li><a class="text-muted" href="index.html">Rooms     </a></li>
+                <li><a class="text-muted" href="category-rooms.html">Map on top     </a></li>
+                <li><a class="text-muted" href="category-2-rooms.html">Side map     </a></li>
+                <li><a class="text-muted" href="category-3-rooms.html">No map     </a></li>
+                <li><a class="text-muted" href="detail-rooms.html">Room detail     </a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+              <h6 class="text-uppercase text-dark mb-3">Pages</h6>
+              <ul class="list-unstyled">
+                <li><a class="text-muted" href="compare.html">Comparison                                   </a></li>
+                <li><a class="text-muted" href="team.html">Team                                   </a></li>
+                <li><a class="text-muted" href="contact.html">Contact                                   </a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h6 class="text-uppercase text-dark mb-3">Daily Offers & Discounts</h6>
+              <p class="mb-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
+              <form action="#" id="newsletter-form">
+                <div class="input-group mb-3">
+                  <input class="form-control bg-transparent border-dark border-right-0" type="email" placeholder="Your Email Address" aria-label="Your Email Address">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-dark border-left-0" type="submit"> <i class="fa fa-paper-plane text-lg"></i></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright section of the footer-->
+      <div class="py-4 font-weight-light bg-gray-800 text-gray-300">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-left">
+              <p class="text-sm mb-md-0">&copy; 2020, Your company.  All rights reserved.</p>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-right">
+                <li class="list-inline-item"><img class="w-2rem" src="img/visa.svg" alt="..."></li>
+                <li class="list-inline-item"><img class="w-2rem" src="img/mastercard.svg" alt="..."></li>
+                <li class="list-inline-item"><img class="w-2rem" src="img/paypal.svg" alt="..."></li>
+                <li class="list-inline-item"><img class="w-2rem" src="img/western-union.svg" alt="..."></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap JS bundle - Bootstrap + PopperJS-->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Magnific Popup - Lightbox for the gallery-->
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Smooth scroll-->
+    <script src="vendor/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+    <!-- Bootstrap Select-->
+    <script src="vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <!-- Object Fit Images - Fallback for browsers that don't support object-fit-->
+    <script src="vendor/object-fit-images/ofi.min.js"></script>
+    <!-- Swiper Carousel                       -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+    <!-- Main Theme JS file    -->
+    <script src="js/theme.js"></script>
+  </body>
+</html>

@@ -1,3 +1,3 @@
-## Techmo-Media
+## Teqmo-Media
 
-This is a Business directory listing website for Techmo-Media.
+This is a Business directory listing website for Teqmo-Media.

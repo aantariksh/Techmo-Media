@@ -29,18 +29,17 @@
         text-align: center;
         border-radius: 10px;
         cursor: pointer;
-        color: red;
+        color: #ec48ad;
       }
     </style>
   </head>
-  <body style="padding-top: 72px;">
-    <!-- Navbar -->
-    <header class="header">
-      <!-- Navbar-->
-      <nav class="navbar navbar-expand-lg fixed-top shadow navbar-light bg-white">
+  <body style="padding-top: 0px;">
+    <!-- Navbar-->
+    <header class="header header-absolute">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
         <div class="container-fluid">
           <div class="d-flex align-items-center">
-            <a class="navbar-brand py-1" href="index.html"><img src="img/logo.png" style="height:50px"></a>
+            <a class="navbar-brand py-1" href="index.html"><img src="img/logo-dark.png" style="height:50px"></a>
           </div>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
           <!-- Navbar Collapse -->
@@ -54,26 +53,165 @@
             </form>
             <ul class="navbar-nav ml-auto">
               <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block"><a class="btn btn-primary" href="404.html">Add a listing</a></li>
-              <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block"><a class="btn btn-secondary" href="404.html">Advertisement</a></li>
+              <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block"><a class="btn btn-secondary" href="teqmo-platform.html">Teqmo Platform</a></li>
             </ul>
           </div>
         </div>
       </nav>
-      <!-- /Navbar -->
     </header>
     <!-- Navbar Ends-->
 
-    <!-- Hero Section -->
-    <section class="d-flex align-items-center dark-overlay bg-cover" style="background-image: url(./img/photo/photo-1525610553991-2bede1a236e2.jpg);">
-      <div class="container py-6 py-lg-7 text-white overlay-content text-center">
-        <div class="row">
-          <div class="col-xl-10 mx-auto">
-            <h1 class="display-3 font-weight-bold text-shadow">Discover Directory</h1>
-            <p class="text-lg text-shadow">Uncover the best places to eat, drink, and shop nearest to you.</p>
+    <!-- New Hero -->
+    <!-- Slider main container-->
+    <div class="swiper-container home-slider multi-slider">
+      <!-- Additional required wrapper-->
+      <div class="swiper-wrapper">
+        <div class="swiper-slide bg-cover dark-overlay bg-cover-right" style="background-image: url('./img/photo/home1.jpg');">
+          <div class="container h-100">
+            <div class="d-flex h-100 text-white overlay-content align-items-center" data-swiper-parallax="-500">
+              <div class="w-100">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p class="subtitle text-white letter-spacing-3 mb-3 font-weight-light">Discover Milledgeville</p>
+                    <h2 class="display-3 font-weight-bold mb-3" style="line-height: 1">Discover Milledgeville</h2>
+                    <p class="mb-5">The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pit</p>
+                  </div>
+                </div>
+                <div class="row mt-3 mt-md-5">
+                  <div class="col-md-4 mb-2 mb-md-0"><a class="media text-reset text-decoration-none hover-animate" href="category.html">
+                      <div class="icon-rounded bg-white opacity-7 mr-4"><i class="fa fa-utensils fa-2x text-dark"></i></div>
+                      <div class="media-body">
+                        <h5>Best Restaurants</h5>
+                        <div class="badge badge-light">Explore</div>
+                      </div></a></div>
+                  <div class="col-md-4 mb-2 mb-md-0"><a class="media text-reset text-decoration-none hover-animate" href="category.html">
+                      <div class="icon-rounded bg-white opacity-7 mr-4"><i class="fa fa-home fa-2x text-dark"></i></div>
+                      <div class="media-body">
+                        <h5>Rent & Hire</h5>
+                        <div class="badge badge-light">from $1,245</div>
+                      </div></a></div>
+                  <div class="col-md-4 mb-2 mb-md-0"><a class="media text-reset text-decoration-none hover-animate" href="category.html">
+                      <div class="icon-rounded bg-white opacity-7 mr-4"><i class="fa fa-shopping-bag fa-2x text-dark"></i></div>
+                      <div class="media-body">
+                        <h5>Shopping & Daily Needs</h5>
+                        <div class="badge badge-light">See more</div>
+                      </div></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide bg-cover dark-overlay" style="background-image: url('img/photo/home2.jpg');">
+          <div class="container h-100">
+            <div class="d-flex h-100 text-white overlay-content align-items-center" data-swiper-parallax="-500">
+              <div class="w-100">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p class="subtitle text-white letter-spacing-3 mb-3 font-weight-light">Blue &amp; White</p>
+                    <h2 class="display-3 font-weight-bold mb-3" style="line-height: 1">Explore</h2>
+                    <p class="mb-5">His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table.</p>
+                    <a class="btn btn-outline-light d-none d-sm-inline-block" href="#category">Start exploring now! <i class="fa fa-angle-right ml-2"></i></a>
+                  </div>
+                  <div class="col-lg-6 pl-lg-5 my-3 my-md-5 my-lg-0"><a class="media text-reset text-decoration-none hover-animate mb-2 mb-md-5" href="category.html">
+                      <div class="icon-rounded bg-white opacity-7 mr-4"><i class="fa fa-home fa-2x text-dark"></i></div>
+                      <div class="media-body">
+                        <h5>Real Estate</h5>
+                        <div class="badge badge-light">from $1500</div>
+                      </div></a><a class="media text-reset text-decoration-none hover-animate mb-2 mb-md-5" href="category.html">
+                      <div class="icon-rounded bg-white opacity-7 mr-4"><i class="fa fa-tools fa-2x text-dark"></i></div>
+                      <div class="media-body">
+                        <h5>Builders & Contractors</h5>
+                        <div class="badge badge-light">from $1,245</div>
+                      </div></a><a class="media text-reset text-decoration-none hover-animate" href="category.html">
+                      <div class="icon-rounded bg-white opacity-7 mr-4"><i class="fa fa-truck-loading fa-2x text-dark"></i></div>
+                      <div class="media-body">
+                        <h5>Packers and Movers</h5>
+                        <div class="badge badge-light">See more</div>
+                      </div></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide bg-cover dark-overlay" style="background-image: url('https://d19m59y37dris4.cloudfront.net/directory/1-6/img/photo/photo-1558114965-eeb97aa84c3b.jpg');">
+          <div class="container h-100">
+            <div class="d-flex h-100 text-white overlay-content align-items-center" data-swiper-parallax="-500">
+              <div class="w-100">
+                <div class="row">
+                  <div class="col-12">
+                    <h2 class="display-3 font-weight-bold mb-5" style="line-height: 1">Best Restaurants</h2>
+                    <p class="mb-5">Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs, and only stopped when he began to feel a mild, dull pain there that he had never felt before.</p>
+                  </div>
+                </div><a class="d-md-none btn btn-outline-light" href="#">Start exploring</a>
+                <div class="row">
+                  <!-- place item-->
+                  <div class="d-none d-md-block col-md-4 mb-5" data-marker-id="">
+                    <div class="card h-100 border-0 shadow-lg bg-dark hover-animate">
+                      <div class="card-img-top overflow-hidden gradient-overlay"> <img class="img-fluid" src="img/photo/restaurant-1430931071372-38127bd472b8.jpg" alt="Fez"/><a class="tile-link" href="detail.html"></a>
+                      </div>
+                      <div class="card-body d-flex align-items-center">
+                        <div class="w-100">
+                          <h6 class="card-title"><a class="text-decoration-none text-white" href="detail-rooms.html">Fez</a></h6>
+                          <div class="d-flex card-subtitle">
+                            <p class="flex-grow-1 mb-0 text-muted text-sm">Central Morocco</p>
+                            <p class="flex-shrink-1 mb-0 card-stars text-xs text-right"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- place item-->
+                  <div class="d-none d-md-block col-md-4 mb-5" data-marker-id="">
+                    <div class="card h-100 border-0 shadow-lg bg-dark hover-animate">
+                      <div class="card-img-top overflow-hidden gradient-overlay">
+                        <img class="img-fluid" src="img/photo/restaurant-1466978913421-dad2ebd01d17.jpg" alt="Marrakech"/>
+                        <a class="tile-link" href="detail.html"></a>
+                      </div>
+                      <div class="card-body d-flex align-items-center">
+                        <div class="w-100">
+                          <h6 class="card-title"><a class="text-decoration-none text-white" href="detail-rooms.html">Marrakech</a></h6>
+                          <div class="d-flex card-subtitle">
+                            <p class="flex-grow-1 mb-0 text-muted text-sm">Central Morocco</p>
+                            <p class="flex-shrink-1 mb-0 card-stars text-xs text-right"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-gray-300">                                  </i>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- place item-->
+                  <div class="d-none d-md-block col-md-4 mb-5" data-marker-id="">
+                    <div class="card h-100 border-0 shadow-lg bg-dark hover-animate">
+                      <div class="card-img-top overflow-hidden gradient-overlay">
+                        <img class="img-fluid" src="img/photo/restaurant-1477763858572-cda7deaa9bc5.jpg" alt="Essaouira"/>
+                        <a class="tile-link" href="detail-rooms.html"></a>
+                      </div>
+                      <div class="card-body d-flex align-items-center">
+                        <div class="w-100">
+                          <h6 class="card-title"><a class="text-decoration-none text-white" href="detail-rooms.html">Essaouira</a></h6>
+                          <div class="d-flex card-subtitle">
+                            <p class="flex-grow-1 mb-0 text-muted text-sm">Coast</p>
+                            <p class="flex-shrink-1 mb-0 card-stars text-xs text-right"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+      <div class="swiper-pagination swiper-pagination-white"></div>
+      <div class="swiper-nav d-none d-lg-block">
+        <div class="swiper-button-prev" id="homePrev"></div>
+        <div class="swiper-button-next" id="homeNext"></div>
+      </div>
+    </div>
     <!-- Hero Ends -->
 
     <!-- Categories -->
@@ -93,7 +231,7 @@
 
           <div class="col-sm-6 col-lg-2 mb-3 mb-lg-0 text-center category-button" onclick="location='./category.html'">
             <div class="icon-rounded mb-3 bg-secondary-light"><i class="fa fa-newspaper fa-2x"></i></div>
-            <h3 class="h6 text-uppercase">Daily needs</h3>
+            <h3 class="h6 text-uppercase">Retail</h3>
           </div>
 
           <div class="col-sm-6 col-lg-2 mb-3 mb-lg-0 text-center category-button" onclick="location='./category.html'">

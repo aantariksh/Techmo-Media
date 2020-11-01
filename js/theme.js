@@ -110,8 +110,9 @@ $(function () {
         spaceBetween: 0,
         centeredSlides: true,
         loop: true,
-        speed: 1500,
+        speed: 2000,
         parallax: true,
+        autoplay: { delay: 2000, },
         // If we need pagination
         pagination: {
             el: '.swiper-pagination',
@@ -160,6 +161,7 @@ $(function () {
     var itemsSliderFull = new Swiper('.items-slider-full', {
         slidesPerView: 6,
         spaceBetween: 20,
+        speed: 1500,
         loop: true,
         roundLengths: true,
         breakpoints: {
@@ -179,7 +181,7 @@ $(function () {
                 slidesPerView: 1
             }
         },
-        // autoplay: { delay: 1000, },
+        autoplay: { delay: 2000, },
 
         // If we need pagination
         pagination: {

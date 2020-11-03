@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Teqmo Media</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="img/favicon.png">
+  <!-- Price Slider Stylesheets -->
+  <link rel="stylesheet" href="vendor/nouislider/nouislider.css">
+  <!-- Google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap">
+  <!-- swiper-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+  <!-- Magnigic Popup-->
+  <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
+  <!-- Leaflet Maps-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome CSS-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <style media="screen">
+  i{color:#ff1493}
+  html {scroll-behavior: smooth;}
+  </style>
+</head>
+
+<body style="padding-top: 72px;">
+  <!-- Navbar -->
+  <header class="header">
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top shadow navbar-light bg-white" style="border-bottom: 5px solid #ff1493;">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand py-1" href="index.html"><img src="img/logo.png" style="height:50px"></a>
+        </div>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <!-- Navbar Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <form class="form-inline mt-4 mb-2 d-sm-none" action="#" id="searchcollapsed">
+            <div class="input-label-absolute input-label-absolute-left input-reset w-100">
+              <label class="label-absolute" for="searchcollapsed_search"><i class="fa fa-search"></i><span class="sr-only">What are you looking for?</span></label>
+              <input class="form-control form-control-sm border-0 shadow-0 bg-gray-200" id="searchcollapsed_search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-reset btn-sm" type="reset"><i class="fa-times fas"> </i></button>
+            </div>
+          </form>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block"><a class="btn btn-primary" href="index.html">Teqmo Home</a></li>
+            <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block"><a class="btn btn-dark" href="teqmo-platform.html">Teqmo Platform</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- /Navbar -->
+  </header>
+  <!-- Navbar Ends-->
+
+    <!-- Hero Section-->
+    <section class="hero py-6 py-lg-7 text-white dark-overlay"><img class="bg-image" src="https://d19m59y37dris4.cloudfront.net/directory/1-6/img/photo/photo-1522143049013-2519756a52d4.jpg" alt="How can we help you today?">
+      <div class="container overlay-content">
+        <!-- Breadcrumbs -->
+        <ol class="breadcrumb text-white justify-content-center no-border mb-0">
+          <li class="breadcrumb-item"><a href="index.html">TEQMO-MEDIA</a></li>
+        </ol>
+        <h1 class="hero-heading">Welcome, Let's get you to listed!</h1>
+      </div>
+    </section>
+    <!-- Hero Ends -->
+
+    <!-- Form -->
+    <section class="py-6 bg-gray-100">
+      <div class="container">
+        <h2 class="h4 mb-5">Details Form</h2>
+        <div class="row">
+          <div class="col-md-7 mb-5 mb-md-0">
+            <form class="form" id="contact-form" method="post" action="contact.php">
+              <div class="controls">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label class="form-label" for="name">Your Name *</label>
+                      <input class="form-control" type="text" name="name" id="name" placeholder="Enter your firstname" required="required">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label class="form-label" for="surname">Business/Company Name *</label>
+                      <input class="form-control" type="text" name="surname" id="surname" placeholder="Enter your  lastname" required="required">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email">Your email *</label>
+                  <input class="form-control" type="email" name="email" id="email" placeholder="Enter your  email" required="required">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="message">Your message for us *</label>
+                  <textarea class="form-control" rows="4" name="message" id="message" placeholder="Enter your message" required="required"></textarea>
+                </div>
+                <button class="btn btn-outline-primary" type="submit">Send message</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-5">
+            <div class="pl-lg-4">
+              <p class="text-muted">Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed. </p>
+              <p class="text-muted">Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh. </p>
+              <div class="social">
+                <ul class="list-inline">
+                  <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                  <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                  <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                  <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-pinterest"></i></a></li>
+                  <li class="list-inline-item"><a href="#" target="_blank"><i class="fab fa-vimeo"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Form Ends -->
+
+    <!-- Contact Details -->
+    <section class="py-6">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center text-md-left mb-4 mb-md-0">
+            <div class="icon-rounded mb-4 bg-primary-light"><i class="fa fa-map-marker-alt fa-2x"></i></div>
+            <h3 class="h5">Address</h3>
+            <p class="text-muted">13/25 New Avenue<br>New Heaven, 45Y 73J<br>England, <strong>Great Britain</strong></p>
+          </div>
+          <div class="col-md-4 text-center text-md-left mb-4 mb-md-0">
+            <div class="icon-rounded mb-4 bg-primary-light"><i class="fa fa-phone fa-2x"></i></div>
+            <h3 class="h5">Call center</h3>
+            <p class="text-muted">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="text-muted"><strong>+33 555 444 333</strong></p>
+          </div>
+          <div class="col-md-4 text-center text-md-left mb-4 mb-md-0">
+            <div class="icon-rounded mb-4 bg-primary-light"><i class="fa fa-envelope fa-2x"></i></div>
+            <h3 class="h5">Electronic support</h3>
+            <p class="text-muted">Please feel free to write an email to us or to use our electronic ticketing system.</p>
+            <ul class="list-unstyled text-muted">
+              <li>info@sell.com</li>
+              <li>support@sell.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Details Ends -->
+
+    <!-- Footer-->
+    <footer class="position-relative z-index-10 d-print-none">
+      <!-- Main block - menus, subscribe form-->
+      <div class="py-6 bg-gray-200 text-muted">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+              <div class="font-weight-bold text-uppercase text-dark mb-3">Directory</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="twitter"><i class="fab fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="instagram"><i class="fab fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="pinterest"><i class="fab fa-pinterest"></i></a></li>
+                <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="vimeo"><i class="fab fa-vimeo"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+              <h6 class="text-uppercase text-dark mb-3">Rentals</h6>
+              <ul class="list-unstyled">
+                <li><a class="text-muted" href="index.html">Rooms     </a></li>
+                <li><a class="text-muted" href="category-rooms.html">Map on top     </a></li>
+                <li><a class="text-muted" href="category-2-rooms.html">Side map     </a></li>
+                <li><a class="text-muted" href="category-3-rooms.html">No map     </a></li>
+                <li><a class="text-muted" href="detail-rooms.html">Room detail     </a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+              <h6 class="text-uppercase text-dark mb-3">Pages</h6>
+              <ul class="list-unstyled">
+                <li><a class="text-muted" href="compare.html">Comparison                                   </a></li>
+                <li><a class="text-muted" href="team.html">Team                                   </a></li>
+                <li><a class="text-muted" href="contact.html">Contact                                   </a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h6 class="text-uppercase text-dark mb-3">Daily Offers & Discounts</h6>
+              <p class="mb-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
+              <form action="#" id="newsletter-form">
+                <div class="input-group mb-3">
+                  <input class="form-control bg-transparent border-dark border-right-0" type="email" placeholder="Your Email Address" aria-label="Your Email Address">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-dark border-left-0" type="submit"> <i class="fa fa-paper-plane text-lg"></i></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright section of the footer-->
+      <div class="py-4 font-weight-light bg-gray-800 text-gray-300">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-left">
+              <p class="text-sm mb-md-0">&copy; 2020, Your company.  All rights reserved.</p>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-right">
+                <li class="list-inline-item"><img class="w-2rem" src="https://d19m59y37dris4.cloudfront.net/directory/1-6/img/visa.svg" alt="..."></li>
+                <li class="list-inline-item"><img class="w-2rem" src="https://d19m59y37dris4.cloudfront.net/directory/1-6/img/mastercard.svg" alt="..."></li>
+                <li class="list-inline-item"><img class="w-2rem" src="https://d19m59y37dris4.cloudfront.net/directory/1-6/img/paypal.svg" alt="..."></li>
+                <li class="list-inline-item"><img class="w-2rem" src="https://d19m59y37dris4.cloudfront.net/directory/1-6/img/western-union.svg" alt="..."></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript files-->
+    <!-- jQuery-->
+    <script src="https://d19m59y37dris4.cloudfront.net/directory/1-6/vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap JS bundle - Bootstrap + PopperJS-->
+    <script src="https://d19m59y37dris4.cloudfront.net/directory/1-6/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Smooth scroll-->
+    <script src="https://d19m59y37dris4.cloudfront.net/directory/1-6/vendor/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+    </body>
+</html>

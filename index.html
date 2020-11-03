@@ -31,6 +31,12 @@
         cursor: pointer;
         color: #ec48ad;
       }
+      #slide1{background-image: url('img/home/1_sm.jpg')}
+      #slide2{background-image: url('img/home/2_sm.jpg')}
+      @media (min-width: 800px){
+        #slide1{background-image: url('img/home/1.jpg')}
+        #slide2{background-image: url('img/home/2.jpg')}
+      }
     </style>
   </head>
   <body style="padding-top: 0px;">
@@ -44,16 +50,9 @@
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
           <!-- Navbar Collapse -->
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <form class="form-inline mt-4 mb-2 d-sm-none" action="#" id="searchcollapsed">
-              <div class="input-label-absolute input-label-absolute-left input-reset w-100">
-                <label class="label-absolute" for="searchcollapsed_search"><i class="fa fa-search"></i><span class="sr-only">What are you looking for?</span></label>
-                <input class="form-control form-control-sm border-0 shadow-0 bg-gray-200" id="searchcollapsed_search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-reset btn-sm" type="reset"><i class="fa-times fas">           </i></button>
-              </div>
-            </form>
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block"><a class="btn btn-primary" href="404.html">Add a listing</a></li>
-              <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block"><a class="btn btn-secondary" href="teqmo-platform.html">Teqmo Platform</a></li>
+              <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block"><a class="btn btn-primary" href="add-listing.html">Add a listing</a></li>
+              <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block"><a class="btn btn-dark" href="teqmo-platform.html">Teqmo Platform</a></li>
             </ul>
           </div>
         </div>
@@ -61,12 +60,12 @@
     </header>
     <!-- Navbar Ends-->
 
-    <!-- New Hero -->
+    <!-- Hero -->
     <!-- Slider main container-->
     <div class="swiper-container home-slider multi-slider">
       <!-- Additional required wrapper-->
       <div class="swiper-wrapper">
-        <div class="swiper-slide bg-cover dark-overlay bg-cover-right" style="background-image: url('./img/photo/home1.jpg');">
+        <div class="swiper-slide bg-cover dark-overlay bg-cover-right" id="slide1">
           <div class="container h-100">
             <div class="d-flex h-100 text-white overlay-content align-items-center" data-swiper-parallax="-500">
               <div class="w-100">
@@ -101,7 +100,7 @@
             </div>
           </div>
         </div>
-        <div class="swiper-slide bg-cover dark-overlay" style="background-image: url('img/photo/home2.jpg');">
+        <div class="swiper-slide bg-cover dark-overlay" id="slide2">
           <div class="container h-100">
             <div class="d-flex h-100 text-white overlay-content align-items-center" data-swiper-parallax="-500">
               <div class="w-100">
@@ -134,7 +133,7 @@
             </div>
           </div>
         </div>
-        <div class="swiper-slide bg-cover dark-overlay" style="background-image: url('https://d19m59y37dris4.cloudfront.net/directory/1-6/img/photo/photo-1558114965-eeb97aa84c3b.jpg');">
+        <div class="swiper-slide bg-cover dark-overlay" style="background-image: url('img/home/3.jpg');">
           <div class="container h-100">
             <div class="d-flex h-100 text-white overlay-content align-items-center" data-swiper-parallax="-500">
               <div class="w-100">
@@ -215,7 +214,7 @@
     <!-- Hero Ends -->
 
     <!-- Categories -->
-    <section class="pt-5 pb-6">
+    <section class="pt-5 pb-6 mx-3 mx-lg-0">
       <div class="pb-lg-4 text-center">
         <p class="subtitle text-secondary">One-of-a-kind directory app</p>
         <h2>Discover great local businesses around you</h2>
@@ -628,39 +627,62 @@
         </div>
         <div class="row">
           <div class="d-flex align-items-lg-stretch mb-4 col-lg-8">
-            <div class="card shadow-lg border-0 w-100 border-0 hover-animate" style="background: center center url(img/photo/photo-1449034446853-66c86144b0ad.jpg) no-repeat; background-size: cover;"><a class="tile-link" href="category.html"> </a>
+            <div class="card shadow-lg border-0 w-100 border-0 hover-animate" style="background: center center url(img/cities/1.Atlanta.jpg) no-repeat; background-size: cover;"><a class="tile-link" href="category.html"> </a>
               <div class="d-flex align-items-center h-100 text-white justify-content-center py-6 py-lg-7">
-                <h3 class="text-shadow text-uppercase mb-0">San Francisco</h3>
+                <h3 class="text-shadow text-uppercase mb-0">ATLANTA DOWNTOWN</h3>
               </div>
             </div>
           </div>
           <div class="d-flex align-items-lg-stretch mb-4 col-lg-4">
-            <div class="card shadow-lg border-0 w-100 border-0 hover-animate" style="background: center center url(img/photo/photo-1429554429301-1c7d5ae2d42e.jpg) no-repeat; background-size: cover;"><a class="tile-link" href="category.html"> </a>
+            <div class="card shadow-lg border-0 w-100 border-0 hover-animate" style="background: center center url(img/cities/2.Jacksonville.jpg) no-repeat; background-size: cover;"><a class="tile-link" href="category.html"> </a>
               <div class="d-flex align-items-center h-100 text-white justify-content-center py-6 py-lg-7">
-                <h3 class="text-shadow text-uppercase mb-0">Los Angeles</h3>
+                <h3 class="text-shadow text-uppercase mb-0">JACKSONVILLE FL</h3>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="d-flex align-items-lg-stretch mb-4 col-lg-4">
-            <div class="card shadow-lg border-0 w-100 border-0 hover-animate" style="background: center center url(img/photo/photo-1523430410476-0185cb1f6ff9.jpg) no-repeat; background-size: cover;"><a class="tile-link" href="category.html"> </a>
+            <div class="card shadow-lg border-0 w-100 border-0 hover-animate" style="background: center center url(img/cities/8.LAKE_OCONEE.jpg) no-repeat; background-size: cover;"><a class="tile-link" href="category.html"> </a>
               <div class="d-flex align-items-center h-100 text-white justify-content-center py-6 py-lg-7">
-                <h3 class="text-shadow text-uppercase mb-0">Santa Monica</h3>
+                <h3 class="text-shadow text-uppercase mb-0">LAKE OCONEE</h3>
               </div>
             </div>
           </div>
           <div class="d-flex align-items-lg-stretch mb-4 col-lg-4">
-            <div class="card shadow-lg border-0 w-100 border-0 hover-animate" style="background: center center url(img/photo/photo-1505245208761-ba872912fac0.jpg) no-repeat; background-size: cover;"><a class="tile-link" href="category.html"> </a>
+            <div class="card shadow-lg border-0 w-100 border-0 hover-animate" style="background: center center url(img/cities/4.Alpharetta.jpg) no-repeat; background-size: cover;"><a class="tile-link" href="category.html"> </a>
               <div class="d-flex align-items-center h-100 text-white justify-content-center py-6 py-lg-7">
-                <h3 class="text-shadow text-uppercase mb-0">San Diego</h3>
+                <h3 class="text-shadow text-uppercase mb-0">ALPHARETTA</h3>
               </div>
             </div>
           </div>
           <div class="d-flex align-items-lg-stretch mb-4 col-lg-4">
-            <div class="card shadow-lg border-0 w-100 border-0 hover-animate" style="background: center center url(img/photo/photo-1519867850-74775a87e783.jpg) no-repeat; background-size: cover;"><a class="tile-link" href="category.html"> </a>
+            <div class="card shadow-lg border-0 w-100 border-0 hover-animate" style="background: center center url(img/cities/5.Gatlinburg.jpg) no-repeat; background-size: cover;"><a class="tile-link" href="category.html"> </a>
               <div class="d-flex align-items-center h-100 text-white justify-content-center py-6 py-lg-7">
-                <h3 class="text-shadow text-uppercase mb-0">Fresno</h3>
+                <h3 class="text-shadow text-uppercase mb-0">GATLINBURG</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="d-flex align-items-lg-stretch mb-4 col-lg-4">
+            <div class="card shadow-lg border-0 w-100 border-0 hover-animate" style="background: center center url(img/cities/6.Savannah.jpg) no-repeat; background-size: cover;"><a class="tile-link" href="category.html"> </a>
+              <div class="d-flex align-items-center h-100 text-white justify-content-center py-6 py-lg-7">
+                <h3 class="text-shadow text-uppercase mb-0">SAVANNAH GA</h3>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-lg-stretch mb-4 col-lg-4">
+            <div class="card shadow-lg border-0 w-100 border-0 hover-animate" style="background: center center url(img/cities/7.ORLANDO.jpg) no-repeat; background-size: cover;"><a class="tile-link" href="category.html"> </a>
+              <div class="d-flex align-items-center h-100 text-white justify-content-center py-6 py-lg-7">
+                <h3 class="text-shadow text-uppercase mb-0">ORLANDO</h3>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-lg-stretch mb-4 col-lg-4">
+            <div class="card shadow-lg border-0 w-100 border-0 hover-animate" style="background: center center url(img/cities/3.Myrtle-beach.jpg) no-repeat; background-size: cover;"><a class="tile-link" href="category.html"> </a>
+              <div class="d-flex align-items-center h-100 text-white justify-content-center py-6 py-lg-7">
+                <h3 class="text-shadow text-uppercase mb-0">MYRTLE BEACH</h3>
               </div>
             </div>
           </div>
@@ -774,15 +796,10 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-6 text-center text-md-left">
-              <p class="text-sm mb-md-0">&copy; 2020, Your company.  All rights reserved.</p>
+              <p class="text-sm mb-md-0">&copy; 2020, TEQMO-MEDIA. All rights reserved.</p>
             </div>
             <div class="col-md-6">
-              <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-right">
-                <li class="list-inline-item"><img class="w-2rem" src="img/visa.svg" alt="..."></li>
-                <li class="list-inline-item"><img class="w-2rem" src="img/mastercard.svg" alt="..."></li>
-                <li class="list-inline-item"><img class="w-2rem" src="img/paypal.svg" alt="..."></li>
-                <li class="list-inline-item"><img class="w-2rem" src="img/western-union.svg" alt="..."></li>
-              </ul>
+              <p class="text-sm text-md-right mb-md-0">Developed & Maintainned by <a href="https://aantariksh.github.io" target="_blank">Aantariksh Developers<a></p>
             </div>
           </div>
         </div>

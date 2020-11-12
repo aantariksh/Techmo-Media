@@ -25,8 +25,12 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <style media="screen">
-  i{color:#ff1493}
-  html {scroll-behavior: smooth;}
+    i,a:hover{color:#ff1493}
+    html {scroll-behavior: smooth;}
+    .hero{width:100%; margin-bottom: 40px; }
+    @media (min-width:700px){
+      .hero{width: 70%;}
+    }
   </style>
 </head>
 
@@ -42,15 +46,8 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
         <!-- Navbar Collapse -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <form class="form-inline mt-4 mb-2 d-sm-none" action="#" id="searchcollapsed">
-            <div class="input-label-absolute input-label-absolute-left input-reset w-100">
-              <label class="label-absolute" for="searchcollapsed_search"><i class="fa fa-search"></i><span class="sr-only">What are you looking for?</span></label>
-              <input class="form-control form-control-sm border-0 shadow-0 bg-gray-200" id="searchcollapsed_search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-reset btn-sm" type="reset"><i class="fa-times fas"> </i></button>
-            </div>
-          </form>
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block"><a class="btn btn-primary" href="add-listing.html">Add a listing</a></li>
+            <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block"><a class="btn btn-dark black-pink" href="add-listing.html">Add a listing</a></li>
             <li class="nav-item mt-3 mt-lg-0 ml-lg-3 d-lg-none d-xl-inline-block"><a class="btn btn-dark" href="index.html">Teqmo Home</a></li>
           </ul>
         </div>
@@ -63,8 +60,7 @@
   <!-- Cards -->
   <section class="pt-5 pb-3">
     <div class="container">
-      <h1 class="hero-heading mb-0">Teqmo Platform</h1>
-      <p class="text-muted mb-5">All our Digital Services.</p>
+      <img class="hero mt-3" src="./img/platform.png">
       <div class="row">
         <div class="col-lg-4 mb-30px">
           <div class="card h-100 border-0 shadow hover-animate">
@@ -133,21 +129,11 @@
       <div class="py-4">
         <hr>
         <h2 class="mb-5 text-primary">Website Design & Development</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <h5>What shipping method does Sell use?</h5>
-            <p class="text-muted mb-4">His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table.</p>
-            <h5>What countries do you to?</h5>
-            <p class="text-muted mb-4">Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.</p>
-          </div>
-          <div class="col-md-6">
-            <h5>One of my items is missing</h5>
-            <p class="text-muted mb-4">He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs, and only stopped when he began to feel a mild, dull pain there that he had never felt before.</p>
-            <h5>Remote areas - delivery</h5>
-            <p class="text-muted mb-4" id="web-hosting">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown
-              belly, slightly domed and divided by arches into stiff sections</p>
-          </div>
-        </div>
+        <p id="web-hosting">We offer professional and state-of-the-art web design services. A website is the face of your
+          business and the services that you provide. A well-designed website is a necessity to ensure
+          perfect delivery of your services. Our trained and experienced website design experts create
+          custom websites for global clients.
+        </p>
       </div>
       <hr>
       <div class="py-4">
@@ -172,20 +158,52 @@
       <hr>
       <div class="py-4">
         <h2 class="mb-5 text-primary">Search Engine Optimisation</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <h5>My product has a problem what should I do?</h5>
-            <p class="text-muted mb-4">He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs, and only stopped when he began to feel a mild, dull pain there that he had never felt before.</p>
-            <h5>What if the product is broken?</h5>
-            <p class="text-muted mb-4">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown
-              belly, slightly domed and divided by arches into stiff sections</p>
-          </div>
-          <div class="col-md-6">
-            <h5>Why should I buy insurance at the checkout?</h5>
-            <p class="text-muted mb-4">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown
-              belly, slightly domed and divided by arches into stiff sections</p>
-          </div>
-        </div>
+        <p id="graphic">
+          We, at Teqmo Media, will help you build scalable infrastructure and develop your brand&#39;s
+          online presence with our organic search methodologies. Once your website traffic starts to
+          grow, we will start our process for conversion rate optimization so that you can see the real
+          results in terms of dollars! We will start the actual planning of your project after a proper
+          analysis to get the desired results to match your business objectives.
+        </p>
+      </div>
+      <hr>
+      <div class="py-4">
+        <h2 class="mb-5 text-primary">Graphic Designing</h2>
+        <p id="video">
+          Graphic design is all around us, and knowing which things make the difference and how to
+          create a design that stands out is essential. At Teqmo Media, we build brands for a
+          multitude of diverse businesses and understand the importance of world-class graphic
+          design.
+        </p>
+      </div>
+      <hr>
+      <div class="py-4">
+        <h2 class="mb-5 text-primary">Video Editing and Advertisement</h2>
+        <p id="social-media">
+          Marketers prefer video ads because it can give a potentially huge return on investment
+          (ROI) through many channels. Also, it is easy to grasp a customer’s attention. Consumers like
+          it because it&#39;s entertaining and engaging. Video Boosts Conversions and Sales. Branded
+          video is an important marketing asset just as a company website, since it is even more
+          important when it comes to reaching and engaging customers. Teqmo media help you
+          Reach more people by showing them ads when they search on Google. Also, increase your
+          visibility in the market. We offer Video marketing services from a digital marketing
+          perspective.
+        </p>
+      </div>
+      <hr>
+      <div class="py-4">
+        <h2 class="mb-5 text-primary">Social Media Marketing</h2>
+        <p>
+          At Teqmo Media, we offer you unique Social Media Marketing packages to reach new
+          customers on social media platforms and provide a tremendous range of benefits for your
+          business. We are well versed in all four Cs of a social-media marketing campaign. We
+          “connect” with your customers through content, videos, images, infographics and other
+          relevant stuff which we create meticulously for your business promotion and social media
+          optimization campaign. We have numerous modern ways for “conversing” with your
+          customers. We “collaborate” with many different web agencies to craft the highest result-
+          yielding campaign for your business. We “create” state-of-the-art materials for promoting
+          your business and for boosting your sales.
+        </p>
       </div>
     </div>
   </section>
@@ -198,8 +216,10 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 mb-5 mb-lg-0">
-            <div class="font-weight-bold text-uppercase text-dark mb-3">Directory</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <img src="./img/logo.png" style="width:50%"> <br><br>
+            <p>Teqmo Media is a US based Business listing and Media platform Company.
+              We're a group of Passionate Designers, Developers, &amp; Engineers.
+              Our Dynamic Team will bring innovative approaches to take your Business online!</p>
             <ul class="list-inline">
               <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="twitter"><i class="fab fa-twitter"></i></a></li>
               <li class="list-inline-item"><a class="text-muted text-hover-primary" href="#" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a></li>
@@ -209,26 +229,32 @@
             </ul>
           </div>
           <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-            <h6 class="text-uppercase text-dark mb-3">Rentals</h6>
+            <h6 class="text-uppercase text-dark mb-3">Categories</h6>
             <ul class="list-unstyled">
-              <li><a class="text-muted" href="index.html">Rooms </a></li>
-              <li><a class="text-muted" href="category-rooms.html">Map on top </a></li>
-              <li><a class="text-muted" href="category-2-rooms.html">Side map </a></li>
-              <li><a class="text-muted" href="category-3-rooms.html">No map </a></li>
-              <li><a class="text-muted" href="detail-rooms.html">Room detail </a></li>
+              <li><a class="text-muted text-hover-primary" href="detail.html">Shopping</a></li>
+              <li><a class="text-muted text-hover-primary" href="detail.html">Retail</a></li>
+              <li><a class="text-muted text-hover-primary" href="detail.html">Restaurants</a></li>
+              <li><a class="text-muted text-hover-primary" href="detail.html">Builders & Contractors</a></li>
+              <li><a class="text-muted text-hover-primary" href="detail.html">Electrical goods</a></li>
+              <li><a class="text-muted text-hover-primary" href="detail.html">Packers & Movers</a></li>
+              <li><a class="text-muted text-hover-primary" href="detail.html">Professional Services</a></li>
+              <li><a class="text-muted text-hover-primary" href="detail.html">Real Estate</a></li>
+              <li><a class="text-muted text-hover-primary" href="detail.html">Rent & Hire</a></li>
+              <li><a class="text-muted text-hover-primary" href="detail.html">Cake shop</a></li>
             </ul>
           </div>
           <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-            <h6 class="text-uppercase text-dark mb-3">Pages</h6>
+            <h6 class="text-uppercase text-dark mb-3">Important Links</h6>
             <ul class="list-unstyled">
-              <li><a class="text-muted" href="compare.html">Comparison </a></li>
-              <li><a class="text-muted" href="team.html">Team </a></li>
-              <li><a class="text-muted" href="contact.html">Contact </a></li>
+              <li><a class="text-muted text-hover-primary" href="teqmo-platform.html">Teqmo Platform</a></li>
+              <li><a class="text-muted text-hover-primary" href="add-listing.html">Register with Us</a></li>
+              <li><a class="text-muted text-hover-primary" href="add-listing.html#contact">Contact Us</a></li>
+              <li><a class="text-muted text-hover-primary" href="terms.html">Terms and Conditions</a></li>
             </ul>
           </div>
           <div class="col-lg-4">
             <h6 class="text-uppercase text-dark mb-3">Daily Offers & Discounts</h6>
-            <p class="mb-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
+            <p class="mb-3"> Sign up for Daily Offers from businesses around you. Get notified about every new business in your locality.</p>
             <form action="#" id="newsletter-form">
               <div class="input-group mb-3">
                 <input class="form-control bg-transparent border-dark border-right-0" type="email" placeholder="Your Email Address" aria-label="Your Email Address">
@@ -246,21 +272,15 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6 text-center text-md-left">
-            <p class="text-sm mb-md-0">&copy; 2020, Your company. All rights reserved.</p>
+            <p class="text-sm mb-md-0">&copy; 2020, TEQMO-MEDIA. All rights reserved.</p>
           </div>
           <div class="col-md-6">
-            <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-right">
-              <li class="list-inline-item"><img class="w-2rem" src="https://d19m59y37dris4.cloudfront.net/directory/1-6/img/visa.svg" alt="..."></li>
-              <li class="list-inline-item"><img class="w-2rem" src="https://d19m59y37dris4.cloudfront.net/directory/1-6/img/mastercard.svg" alt="..."></li>
-              <li class="list-inline-item"><img class="w-2rem" src="https://d19m59y37dris4.cloudfront.net/directory/1-6/img/paypal.svg" alt="..."></li>
-              <li class="list-inline-item"><img class="w-2rem" src="https://d19m59y37dris4.cloudfront.net/directory/1-6/img/western-union.svg" alt="..."></li>
-            </ul>
+            <p class="text-sm text-md-right mb-md-0">Developed & Maintainned by <a href="teqmo-platform.html" target="_blank">Teqmo Media Platform<a></p>
           </div>
         </div>
       </div>
     </div>
   </footer>
-  <!-- Footer Ends -->
 
   <!-- JavaScript files-->
   <!-- jQuery-->

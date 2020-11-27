@@ -223,5 +223,12 @@
     <script src="../../assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
     <!-- Object Fit Images - Fallback for browsers that don't support object-fit-->
     <script src="../../assets/vendor/object-fit-images/ofi.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+    <script type="text/javascript">
+    $.ajax({url: "users.json",
+          dataType: "json",
+          success: function(response) {console.log(response);}
+          });
+    </script>
   </body>
 </html>

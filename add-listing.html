@@ -28,6 +28,12 @@
   i{color:#ff1493}
   html {scroll-behavior: smooth;}
   </style>
+  <script type="text/javascript">
+    function func(){
+      alert("Your message has been sent. Thank you!");
+      location.reload();
+    }
+  </script>
 </head>
 
 <body style="padding-top: 72px;">
@@ -74,34 +80,34 @@
         <h2 class="h4 mb-5">Reach Us</h2>
         <div class="row">
           <div class="col-md-7 mb-5 mb-md-0">
-            <form class="form" id="contact-form" method="post" action="contact.php">
+            <form class="form" id="contact-form" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSetfTj0838SRDDPnN6nBScaNIiPBNALi2NojRREyUdX2i2dgQ/formResponse?" target="hidden_iframe" onsubmit="func()">
               <div class="controls">
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <label class="form-label" for="name">Your Name *</label>
-                      <input class="form-control" type="text" name="name" id="name" placeholder="Enter your firstname" required="required">
+                      <label class="form-label">Your Name *</label>
+                      <input class="form-control" type="text" name="entry.1395212284" id="entry.1395212284" placeholder="Enter your firstname" required="required">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <label class="form-label" for="surname">Business/Company Name *</label>
-                      <input class="form-control" type="text" name="surname" id="surname" placeholder="Enter your  lastname" required="required">
+                      <label class="form-label">Business/Company Name *</label>
+                      <input class="form-control" type="text" name="entry.2023456003" id="entry.2023456003" placeholder="Enter your  lastname" required="required">
                     </div>
                   </div>
                 </div>
                 <div class="form-group">
-                  <label class="form-label" for="email">Your email *</label>
-                  <input class="form-control" type="email" name="email" id="email" placeholder="Enter your  email" required="required">
+                  <label class="form-label">Your email *</label>
+                  <input class="form-control" type="email" name="entry.246747397" id="entry.246747397" placeholder="Enter your  email" required="required">
                 </div>
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label class="form-label">Contact Number</label>
-                    <input type="number" class="form-control">
+                    <input type="number" class="form-control" name="entry.112999531" id="entry.112999531">
                   </div>
                   <div class="form-group col-md-6">
                     <label class="form-label">Business Category *</label>
-                    <select class="form-control" required>
+                    <select class="form-control" required name="entry.985496721" id="entry.985496721">
                       <option selected disabled>Choose...</option>
                       <option>Shopping</option>
                       <option>Retail</option>
@@ -117,12 +123,13 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <label class="form-label" for="message">Your message for us *</label>
-                  <textarea class="form-control" rows="4" name="message" id="message" placeholder="Enter your message" required="required"></textarea>
+                  <label class="form-label">Your message for us *</label>
+                  <textarea class="form-control" rows="4" name="entry.188184162" id="entry.188184162" placeholder="Enter your message" required="required"></textarea>
                 </div>
-                <button class="btn btn-outline-primary" type="submit">Send message</button>
               </div>
+              <button class="btn btn-outline-primary" type="submit">Send message</button>
             </form>
+            <iframe name="hidden_iframe" style="display:none;"></iframe>
           </div>
           <div class="col-md-5">
             <div class="pl-lg-4">

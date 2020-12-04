@@ -30,8 +30,12 @@
   </style>
   <script type="text/javascript">
     function func(){
-      alert("Your message has been sent. Thank you!");
-      location.reload();
+      Swal.fire({
+        title: 'Thank You!',
+        text: 'Your response has been received, Teqmo Media will get back to you',
+        icon: 'success',
+        confirmButtonText: 'Close'
+      }).then(() => {location.reload();})
     }
   </script>
 </head>
@@ -256,5 +260,7 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Smooth scroll-->
     <script src="assets/vendor/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+    <!-- SWAL -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     </body>
 </html>
